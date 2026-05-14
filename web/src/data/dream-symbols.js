@@ -1,0 +1,557 @@
+// Dream symbol database — maps common dream imagery to archetype symbols
+export const DREAM_SYMBOLS = [
+  // Water
+  {
+    keyword: "ocean",
+    symbol: "River",
+    symbolId: 6,
+    meaning: "Deep emotions, the unconscious, vastness of feeling",
+    theme: "emotion",
+  },
+  {
+    keyword: "river",
+    symbol: "River",
+    symbolId: 6,
+    meaning: "Life flow, emotional current, letting go",
+    theme: "emotion",
+  },
+  {
+    keyword: "flood",
+    symbol: "Storm",
+    symbolId: 10,
+    meaning: "Overwhelming emotions, loss of control",
+    theme: "crisis",
+  },
+  {
+    keyword: "rain",
+    symbol: "River",
+    symbolId: 6,
+    meaning: "Cleansing, renewal, tears, release",
+    theme: "emotion",
+  },
+  {
+    keyword: "drowning",
+    symbol: "Abyss",
+    symbolId: 15,
+    meaning: "Overwhelm, fear of being consumed",
+    theme: "crisis",
+  },
+  {
+    keyword: "swimming",
+    symbol: "River",
+    symbolId: 6,
+    meaning: "Navigating emotions, going with the flow",
+    theme: "growth",
+  },
+  {
+    keyword: "ice",
+    symbol: "Tower",
+    symbolId: 11,
+    meaning: "Frozen emotions, rigidity, numbness",
+    theme: "crisis",
+  },
+  {
+    keyword: "lake",
+    symbol: "Mirror",
+    symbolId: 14,
+    meaning: "Self-reflection, stillness, inner truth",
+    theme: "awareness",
+  },
+
+  // Fire
+  {
+    keyword: "fire",
+    symbol: "Flame",
+    symbolId: 7,
+    meaning: "Passion, transformation, anger, desire",
+    theme: "energy",
+  },
+  {
+    keyword: "burning",
+    symbol: "Flame",
+    symbolId: 7,
+    meaning: "Urgent transformation, destruction of old",
+    theme: "crisis",
+  },
+  {
+    keyword: "candle",
+    symbol: "Lantern",
+    symbolId: 18,
+    meaning: "Hope, guidance, small light in darkness",
+    theme: "guidance",
+  },
+  {
+    keyword: "volcano",
+    symbol: "Storm",
+    symbolId: 10,
+    meaning: "Repressed emotions erupting",
+    theme: "crisis",
+  },
+  {
+    keyword: "sun",
+    symbol: "Dawn",
+    symbolId: 2,
+    meaning: "Consciousness, vitality, new beginning",
+    theme: "awakening",
+  },
+  {
+    keyword: "light",
+    symbol: "Lantern",
+    symbolId: 18,
+    meaning: "Awareness, truth, understanding",
+    theme: "guidance",
+  },
+
+  // Earth
+  {
+    keyword: "mountain",
+    symbol: "Mountain",
+    symbolId: 9,
+    meaning: "Challenge, spiritual ascent, achievement",
+    theme: "growth",
+  },
+  {
+    keyword: "cave",
+    symbol: "Abyss",
+    symbolId: 15,
+    meaning: "The unconscious, hidden knowledge, womb",
+    theme: "mystery",
+  },
+  {
+    keyword: "earthquake",
+    symbol: "Tower",
+    symbolId: 11,
+    meaning: "Foundational change, instability",
+    theme: "crisis",
+  },
+  {
+    keyword: "garden",
+    symbol: "Seed",
+    symbolId: 1,
+    meaning: "Cultivation, growth, inner peace",
+    theme: "growth",
+  },
+  {
+    keyword: "forest",
+    symbol: "Tree",
+    symbolId: 5,
+    meaning: "The unconscious, getting lost, natural wisdom",
+    theme: "nature",
+  },
+  {
+    keyword: "tree",
+    symbol: "Tree",
+    symbolId: 5,
+    meaning: "Growth, rootedness, family, life force",
+    theme: "nature",
+  },
+  {
+    keyword: "flower",
+    symbol: "Seed",
+    symbolId: 1,
+    meaning: "Beauty, growth, opening, blossoming",
+    theme: "growth",
+  },
+  {
+    keyword: "desert",
+    symbol: "Abyss",
+    symbolId: 15,
+    meaning: "Spiritual dryness, isolation, purification",
+    theme: "crisis",
+  },
+
+  // Air / Sky
+  {
+    keyword: "flying",
+    symbol: "Phoenix",
+    symbolId: 21,
+    meaning: "Freedom, transcendence, perspective",
+    theme: "liberation",
+  },
+  {
+    keyword: "falling",
+    symbol: "Tower",
+    symbolId: 11,
+    meaning: "Loss of control, fear, letting go",
+    theme: "crisis",
+  },
+  {
+    keyword: "storm",
+    symbol: "Storm",
+    symbolId: 10,
+    meaning: "Emotional turmoil, cleansing, power",
+    theme: "crisis",
+  },
+  {
+    keyword: "wind",
+    symbol: "Phoenix",
+    symbolId: 21,
+    meaning: "Change, spirit, invisible forces",
+    theme: "transformation",
+  },
+  {
+    keyword: "cloud",
+    symbol: "Labyrinth",
+    symbolId: 12,
+    meaning: "Confusion, obscured vision, transition",
+    theme: "uncertainty",
+  },
+  {
+    keyword: "star",
+    symbol: "Star",
+    symbolId: 22,
+    meaning: "Hope, guidance, destiny, aspiration",
+    theme: "guidance",
+  },
+  {
+    keyword: "moon",
+    symbol: "Mirror",
+    symbolId: 14,
+    meaning: "Intuition, feminine, cycles, reflection",
+    theme: "awareness",
+  },
+
+  // Animals
+  {
+    keyword: "snake",
+    symbol: "Serpent",
+    symbolId: 13,
+    meaning: "Transformation, healing, hidden fears, kundalini",
+    theme: "transformation",
+  },
+  {
+    keyword: "serpent",
+    symbol: "Serpent",
+    symbolId: 13,
+    meaning: "Deep transformation, shedding old skin",
+    theme: "transformation",
+  },
+  {
+    keyword: "bird",
+    symbol: "Phoenix",
+    symbolId: 21,
+    meaning: "Spirit, freedom, messages, transcendence",
+    theme: "liberation",
+  },
+  {
+    keyword: "wolf",
+    symbol: "Compass",
+    symbolId: 19,
+    meaning: "Instinct, loyalty, the guide within",
+    theme: "guidance",
+  },
+  {
+    keyword: "cat",
+    symbol: "Mirror",
+    symbolId: 14,
+    meaning: "Independence, intuition, mystery",
+    theme: "awareness",
+  },
+  {
+    keyword: "horse",
+    symbol: "Flame",
+    symbolId: 7,
+    meaning: "Power, freedom, drive, passion",
+    theme: "energy",
+  },
+  {
+    keyword: "spider",
+    symbol: "Loom",
+    symbolId: 16,
+    meaning: "Creativity, fate, interconnection",
+    theme: "weaving",
+  },
+  {
+    keyword: "fish",
+    symbol: "River",
+    symbolId: 6,
+    meaning: "Unconscious insights, fertility, abundance",
+    theme: "emotion",
+  },
+  {
+    keyword: "butterfly",
+    symbol: "Phoenix",
+    symbolId: 21,
+    meaning: "Transformation, rebirth, beauty in change",
+    theme: "transformation",
+  },
+  {
+    keyword: "eagle",
+    symbol: "Crown",
+    symbolId: 20,
+    meaning: "Vision, sovereignty, spiritual power",
+    theme: "mastery",
+  },
+  {
+    keyword: "bear",
+    symbol: "Tree",
+    symbolId: 5,
+    meaning: "Strength, introspection, protection",
+    theme: "strength",
+  },
+
+  // Structures
+  {
+    keyword: "house",
+    symbol: "Tree",
+    symbolId: 5,
+    meaning: "The self, psyche, family, stability",
+    theme: "self",
+  },
+  {
+    keyword: "door",
+    symbol: "Key",
+    symbolId: 3,
+    meaning: "Opportunity, transition, choice",
+    theme: "threshold",
+  },
+  {
+    keyword: "key",
+    symbol: "Key",
+    symbolId: 3,
+    meaning: "Solution, access, unlocking potential",
+    theme: "discovery",
+  },
+  {
+    keyword: "bridge",
+    symbol: "Bridge",
+    symbolId: 8,
+    meaning: "Transition, connection, crossing over",
+    theme: "transition",
+  },
+  {
+    keyword: "tower",
+    symbol: "Tower",
+    symbolId: 11,
+    meaning: "Ambition, isolation, false structures",
+    theme: "crisis",
+  },
+  {
+    keyword: "labyrinth",
+    symbol: "Labyrinth",
+    symbolId: 12,
+    meaning: "Life journey, complexity, finding center",
+    theme: "journey",
+  },
+  {
+    keyword: "maze",
+    symbol: "Labyrinth",
+    symbolId: 12,
+    meaning: "Confusion, searching for way out",
+    theme: "journey",
+  },
+  {
+    keyword: "mirror",
+    symbol: "Mirror",
+    symbolId: 14,
+    meaning: "Self-reflection, truth, identity",
+    theme: "awareness",
+  },
+  {
+    keyword: "stairs",
+    symbol: "Mountain",
+    symbolId: 9,
+    meaning: "Progress, ascent or descent, levels",
+    theme: "growth",
+  },
+  {
+    keyword: "window",
+    symbol: "Dawn",
+    symbolId: 2,
+    meaning: "Perspective, opportunity, looking in/out",
+    theme: "awareness",
+  },
+  {
+    keyword: "road",
+    symbol: "Compass",
+    symbolId: 19,
+    meaning: "Life path, direction, journey ahead",
+    theme: "direction",
+  },
+  {
+    keyword: "path",
+    symbol: "Compass",
+    symbolId: 19,
+    meaning: "Direction, choices, destiny",
+    theme: "direction",
+  },
+
+  // People / Archetypes
+  {
+    keyword: "child",
+    symbol: "Seed",
+    symbolId: 1,
+    meaning: "Innocence, new beginnings, inner child",
+    theme: "innocence",
+  },
+  {
+    keyword: "baby",
+    symbol: "Egg",
+    symbolId: 4,
+    meaning: "New project, vulnerability, potential",
+    theme: "birth",
+  },
+  {
+    keyword: "shadow",
+    symbol: "Serpent",
+    symbolId: 13,
+    meaning: "Repressed self, hidden aspects",
+    theme: "shadow",
+  },
+  {
+    keyword: "death",
+    symbol: "Phoenix",
+    symbolId: 21,
+    meaning: "Transformation, ending, rebirth",
+    theme: "transformation",
+  },
+  {
+    keyword: "wedding",
+    symbol: "Loom",
+    symbolId: 16,
+    meaning: "Union, commitment, integration",
+    theme: "union",
+  },
+  {
+    keyword: "chase",
+    symbol: "Storm",
+    symbolId: 10,
+    meaning: "Avoidance, running from truth, anxiety",
+    theme: "crisis",
+  },
+  {
+    keyword: "naked",
+    symbol: "Mirror",
+    symbolId: 14,
+    meaning: "Vulnerability, truth, exposure",
+    theme: "awareness",
+  },
+  {
+    keyword: "teeth",
+    symbol: "Tower",
+    symbolId: 11,
+    meaning: "Anxiety, loss, powerlessness",
+    theme: "crisis",
+  },
+  {
+    keyword: "exam",
+    symbol: "Scale",
+    symbolId: 17,
+    meaning: "Self-evaluation, fear of judgment",
+    theme: "judgment",
+  },
+
+  // Objects
+  {
+    keyword: "crown",
+    symbol: "Crown",
+    symbolId: 20,
+    meaning: "Authority, achievement, sovereignty",
+    theme: "mastery",
+  },
+  {
+    keyword: "sword",
+    symbol: "Scale",
+    symbolId: 17,
+    meaning: "Truth, justice, cutting through",
+    theme: "clarity",
+  },
+  {
+    keyword: "cup",
+    symbol: "Chalice",
+    symbolId: 23,
+    meaning: "Emotion, love, spiritual fulfillment",
+    theme: "emotion",
+  },
+  {
+    keyword: "chalice",
+    symbol: "Chalice",
+    symbolId: 23,
+    meaning: "Sacred container, fulfillment, grace",
+    theme: "fulfillment",
+  },
+  {
+    keyword: "egg",
+    symbol: "Egg",
+    symbolId: 4,
+    meaning: "Potential, fertility, fragility",
+    theme: "potential",
+  },
+  {
+    keyword: "seed",
+    symbol: "Seed",
+    symbolId: 1,
+    meaning: "Beginning, potential, planting intentions",
+    theme: "growth",
+  },
+  {
+    keyword: "ring",
+    symbol: "Ouroboros",
+    symbolId: 24,
+    meaning: "Commitment, cycles, eternity",
+    theme: "cycles",
+  },
+  {
+    keyword: "clock",
+    symbol: "Ouroboros",
+    symbolId: 24,
+    meaning: "Time, cycles, urgency, mortality",
+    theme: "cycles",
+  },
+  {
+    keyword: "compass",
+    symbol: "Compass",
+    symbolId: 19,
+    meaning: "Direction, finding your way, guidance",
+    theme: "direction",
+  },
+  {
+    keyword: "lamp",
+    symbol: "Lantern",
+    symbolId: 18,
+    meaning: "Guidance, awareness, illumination",
+    theme: "guidance",
+  },
+  {
+    keyword: "book",
+    symbol: "Key",
+    symbolId: 3,
+    meaning: "Knowledge, wisdom, self-discovery",
+    theme: "discovery",
+  },
+];
+
+export const DREAM_MOODS = [
+  { id: "peaceful", label: "Peaceful", emoji: "😌", color: "#34D399" },
+  { id: "anxious", label: "Anxious", emoji: "😰", color: "#F87171" },
+  { id: "joyful", label: "Joyful", emoji: "😊", color: "#FBBF24" },
+  { id: "fearful", label: "Fearful", emoji: "😨", color: "#EF4444" },
+  { id: "confused", label: "Confused", emoji: "😵‍💫", color: "#A78BFA" },
+  { id: "excited", label: "Excited", emoji: "🤩", color: "#F472B6" },
+  { id: "sad", label: "Sad", emoji: "😢", color: "#60A5FA" },
+  { id: "empowered", label: "Empowered", emoji: "💪", color: "#34D399" },
+  { id: "nostalgic", label: "Nostalgic", emoji: "🥹", color: "#FCD34D" },
+  { id: "mysterious", label: "Mysterious", emoji: "🔮", color: "#C084FC" },
+];
+
+// Detect symbols from dream description text
+export function detectDreamSymbols(text) {
+  if (!text) return [];
+  const lower = text.toLowerCase();
+  const found = [];
+  const seenSymbols = new Set();
+
+  for (const ds of DREAM_SYMBOLS) {
+    if (lower.includes(ds.keyword) && !seenSymbols.has(ds.symbolId)) {
+      seenSymbols.add(ds.symbolId);
+      found.push({
+        keyword: ds.keyword,
+        symbol: ds.symbol,
+        symbolId: ds.symbolId,
+        meaning: ds.meaning,
+        theme: ds.theme,
+      });
+    }
+  }
+  return found;
+}
